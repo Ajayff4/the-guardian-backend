@@ -1,0 +1,85 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "the-guardian",
+  "dateExported": "2022-04-22T21:36:09.027Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "dccf0540-b722-4014-b485-62ab2adbcf57",
+      "name": "Category",
+      "containerId": "",
+      "created": "2022-03-27T20:49:14.119Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "ef69f670-dc9d-4a1b-a859-6d0fb4127774",
+      "name": "User",
+      "containerId": "",
+      "created": "2022-03-27T20:49:28.733Z",
+      "sortNum": 20000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "75297b06-6349-4cd6-94b8-1261122ac71f",
+      "colId": "cf3ecf1f-5f36-4550-a0fc-0bd9bbee7e78",
+      "containerId": "ef69f670-dc9d-4a1b-a859-6d0fb4127774",
+      "name": "getUsers",
+      "url": "http://localhost:5000/api/users",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2022-03-26T22:44:38.945Z",
+      "modified": "2022-03-27T20:49:31.798Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "29a60791-4e0b-4f37-b5bb-23375d223bc3",
+      "colId": "cf3ecf1f-5f36-4550-a0fc-0bd9bbee7e78",
+      "containerId": "dccf0540-b722-4014-b485-62ab2adbcf57",
+      "name": "getCategories",
+      "url": "http://localhost:5000/api/categories",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2022-03-27T20:11:00.315Z",
+      "modified": "2022-03-27T20:49:18.489Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "d9810868-f4f0-4aee-a213-5d823c8c0f53",
+      "colId": "cf3ecf1f-5f36-4550-a0fc-0bd9bbee7e78",
+      "containerId": "dccf0540-b722-4014-b485-62ab2adbcf57",
+      "name": "saveCategory",
+      "url": "http://localhost:5000/api/categories",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-03-27T20:49:42.596Z",
+      "modified": "2022-03-27T20:53:55.021Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"group\": \"email\",\n  \"name\": \"Gmail\",\n  \"icon\": \"fa fa-envelope\",\n  \"color\": \"#f44336\",\n  \"description\": \"Gmail Account\",\n  \"active\": true\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "eda363df-48b6-4f3f-8e18-d3bcf65e02a2",
+      "colId": "cf3ecf1f-5f36-4550-a0fc-0bd9bbee7e78",
+      "containerId": "ef69f670-dc9d-4a1b-a859-6d0fb4127774",
+      "name": "saveUser",
+      "url": "http://localhost:5000/api/users",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2022-04-22T21:35:47.898Z",
+      "modified": "2022-04-22T21:35:56.784Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}
